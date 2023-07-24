@@ -1,0 +1,42 @@
+/* Reset default styles for better consistency */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the container */
+  .input-container {
+    display: block;
+    align-items: center;
+    width: 86%;
+  }
+  
+  /* Style the input field */
+  .input-container input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    color: #000;
+    border-radius: 5px 0 0 5px; /* Rounded corners on the left */
+    flex: 1; /* Fill remaining space */
+  }
+  .input-container input::placeholder{
+    color: #000;
+  }
+  
+  /* Style the button */
+  .input-container button {
+    padding: 6px;
+    height: 36px;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    border-radius: 0 5px 5px 0; /* Rounded corners on the right */
+    cursor: pointer;
+  }
+  
+  /* On hover, change the background color of the button */
+  .input-container button:hover {
+    background-color: #0056b3;
+  }
